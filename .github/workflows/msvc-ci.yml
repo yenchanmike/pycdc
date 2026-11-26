@@ -11,6 +11,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          repository: 'matiiss/pycdc'
+          ref: 'fix-3.13-calls'
 
       - name: Build
         run: |
